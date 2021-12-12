@@ -3,14 +3,11 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FormularioComponent } from './pages/formulario/formulario.component';
-import { ListagemComponent } from './pages/listagem/listagem.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    FormularioComponent,
-    ListagemComponent
   ],
   imports: [
     BrowserModule,
@@ -18,6 +15,6 @@ import { ListagemComponent } from './pages/listagem/listagem.component';
   ],
   providers: [],
   bootstrap: [AppComponent],
-  exports: [FormularioComponent, ListagemComponent]
+  exports: []
 })
 export class AppModule { }
