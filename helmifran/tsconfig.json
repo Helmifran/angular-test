@@ -3,6 +3,11 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
+    "paths": {
+      "@dtos": ["src/core/dtos/index"],
+      "@enums": ["src/core/enums/index"],
+      "@services": ["src/core/services/index"],
+    },
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,

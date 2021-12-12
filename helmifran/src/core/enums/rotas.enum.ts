@@ -1,5 +1,5 @@
 export class Rotas {
-  static readonly ROTA_HOME = {
+  static ROTA_HOME = {
     formulario: 'home/formulario',
     listagem: 'home',
   };
