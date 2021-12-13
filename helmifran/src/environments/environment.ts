@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  API_URL: 'https://api.helena.app/test/',
+  API_URL: 'https://api.helena.app/test/api/Company/',
 };
 
 /*

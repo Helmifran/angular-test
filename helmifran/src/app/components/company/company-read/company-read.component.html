@@ -1,0 +1,47 @@
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+  <ng-container matColumnDef="avatarUrl">
+    <th mat-header-cell *matHeaderCellDef> Avatar </th>
+    <td mat-cell *matCellDef="let element">
+      <img [src]="element.avatarUrl" alt="Avatar" width="40" height="40">
+  </ng-container>
+
+  <ng-container matColumnDef="razaoSocial">
+    <th mat-header-cell *matHeaderCellDef> Razão social </th>
+    <td mat-cell *matCellDef="let element"> {{element.razaoSocial}} </td>
+  </ng-container>
+
+    <ng-container matColumnDef="qtdeFuncionarios">
+      <th mat-header-cell *matHeaderCellDef> Quantidade de funcionários </th>
+      <td mat-cell *matCellDef="let element"> {{element.qtdeFuncionarios}} </td>
+    </ng-container>
+
+  <ng-container matColumnDef="active">
+    <th mat-header-cell *matHeaderCellDef> Situação  </th>
+    *ngIf="element.active"
+      <td mat-cell *matCellDef="let element"> Ativo </td>
+    *ngIf="!element.active"
+      <td mat-cell *matCellDef="let element"> Inativo </td>
+  </ng-container>
+
+        <!-- Action Column -->
+        <ng-container matColumnDef="action">
+          <th id="edit" mat-header-cell *matHeaderCellDef>Ações</th>
+          <td mat-cell *matCellDef="let element">
+              <a routerLink="/company/update/{{ element.id }}" class="edit">
+                  <em class="material-icons">
+                    edit
+                  </em>
+              </a>
+              <a routerLink="/company/delete/{{ element.id }}" class="delete">
+                  <em class="material-icons">
+                    delete
+                  </em>
+              </a>
+          </td>
+        </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+<mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>

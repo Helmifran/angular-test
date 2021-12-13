@@ -1,0 +1,24 @@
+<mat-card>
+    <mat-card-title>Atualizar empresa</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome de Fantasia"
+                [(ngModel)]="company.nomeFantasia" name="nomeFantasia">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Razão Social"
+                [(ngModel)]="company.razaoSocial" name="razaoSocial">
+        </mat-form-field>
+        <mat-form-field>
+            <input type="number" matInput placeholder="Quantidade de Funcionários"
+                [(ngModel)]="company.qtdeFuncionarios" name="qtdeFuncionarios">
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="updateCompany()" color="primary">
+        Atualizar
+    </button>
+    
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>
