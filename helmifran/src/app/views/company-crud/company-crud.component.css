@@ -1,3 +1,7 @@
 button {
     margin-bottom: 30px;
 }
+
+.mat-raised-button.mat-primary, .mat-fab.mat-primary, .mat-mini-fab.mat-primary {
+    background-color: #9629e6;
+}
