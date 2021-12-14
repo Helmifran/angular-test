@@ -33,3 +33,22 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   .mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element {
       background-color:#9629e6; 
   }
+
+  .mat-raised-button.mat-primary, .mat-fab.mat-primary, .mat-mini-fab.mat-primary {
+    background-color: #9629e6;
+}
+
+.mat-focused .mat-form-field-label {
+    /*change color of label*/
+    color: #9629e6 !important;
+   }
+  
+   .mat-form-field-underline {
+    /*change color of underline*/
+    background-color: #9629e6 !important;
+  } 
+  
+  .mat-form-field-ripple {
+   /*change color of underline when focused*/
+   background-color: #9629e6 !important;;
+  }
