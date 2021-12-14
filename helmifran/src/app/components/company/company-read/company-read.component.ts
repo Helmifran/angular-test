@@ -19,4 +19,9 @@ export class CompanyReadComponent implements OnInit {
       this.dataSource = company;
     })
   }
+  
+    statusAtivoOuInativo(active: boolean): string {
+    return active ? "Ativo" : "Inativo";
+  }
+  
 }
