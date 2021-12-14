@@ -3,15 +3,15 @@
     <form>
         <mat-form-field>
             <input matInput placeholder="Nome de Fantasia"
-                [(ngModel)]="company.nomeFantasia" name="nomeFantasia">
+                [(ngModel)]="company.nomeFantasia" name="nomeFantasia" required>
         </mat-form-field>
         <mat-form-field>
             <input matInput placeholder="Razão Social"
-                [(ngModel)]="company.razaoSocial" name="razaoSocial">
+                [(ngModel)]="company.razaoSocial" name="razaoSocial" required>
         </mat-form-field>
         <mat-form-field>
             <input type="number" matInput placeholder="Quantidade de Funcionários"
-                [(ngModel)]="company.qtdeFuncionarios" name="qtdeFuncionarios">
+                [(ngModel)]="company.qtdeFuncionarios" name="qtdeFuncionarios" required>
         </mat-form-field>
         <div>Situação:</div>
         <mat-radio-group [(ngModel)]="company.active" >

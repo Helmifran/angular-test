@@ -7,9 +7,25 @@ table {
 }
 
 .edit > i {
-    color: #d9cd26;
+    color: #ffffff;
 }
 
 .delete > i {
     color: #ffffff;
+}
+
+.carregando {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 50%;
+}
+
+img {
+    width: 40px;
+    height: 40px;
+    border-radius: 20%;
+    margin-right: 15px;
 }

@@ -11,13 +11,15 @@ export class CompanyReadComponent implements OnInit {
     
   displayedColumns: string[] = ["avatarUrl", "razaoSocial", "qtdeFuncionarios", "active", "action"];
   dataSource: Company[] = [];
-  
+  public spinner = true;
+
   constructor(private companyService: CompanyService) { }
 
   ngOnInit(): void {
     this.companyService.read().subscribe(company => {
+      this.spinner = false
       this.dataSource = company;
-    })
+    });
   }
   
     statusAtivoOuInativo(active: boolean): string {

@@ -52,3 +52,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
    /*change color of underline when focused*/
    background-color: #9629e6 !important;;
   }
+
+  .mat-progress-spinner circle, .mat-spinner circle {
+    stroke: #9629e6;
+    }
